@@ -3,17 +3,15 @@ language: python
 #build_image: shippable/minv2:beta
 
 python:
-  - 2.6
   - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
+  
  # - pypy
 
 before_install:
   - source ~/.rvm/scripts/rvm && rvm use 1.9.2
   
 install:
+  - shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
   - pip install -r requirements.txt
 
 # Make folders for the reports
