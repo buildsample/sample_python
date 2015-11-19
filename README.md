@@ -1,7 +1,6 @@
 Python Sample
 =====================
 
-
 test11
 
 Simple Python sample with tests using Nose and Coverage.
