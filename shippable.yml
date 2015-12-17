@@ -1,16 +1,16 @@
 language: python
 
-
+build_image: drydock/u12pyt:tip
 python:
- # - 2.6
-  #- 2.7
-  #- 3.2
+  - 2.6
+  - 2.7
+  - 3.2
   - 3.3
   - 3.4
-  #- pypy
+  - pypy
 
 install:
-  - pip install -r requirements.txt
+  #- pip install -r requirements.txt
 
 
 # Make folders for the reports
@@ -25,9 +25,6 @@ script:
   - echo $BUILD_NUMBER
 
 archive: true
-branches:
-  except:
-    - test_fail/001
 
 #cache: true 
 #parallelized_test : true
