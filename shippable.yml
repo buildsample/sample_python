@@ -1,6 +1,7 @@
 language: python
 
-build_image: drydock/u12pyt:tip
+build_image: drydock/u14pyt:tip
+
 python:
   - 2.6
   - 2.7
@@ -9,7 +10,7 @@ python:
   - 3.4
   - pypy
 
-install:
+#install:
   #- pip install -r requirements.txt
 
 
