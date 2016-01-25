@@ -1,5 +1,5 @@
 language: python
-build_image: drydock/u12pytall:tip
+build_image: drydock/u12pyt:tip
 #build_image: shippable/minv2:beta
 
 python:
