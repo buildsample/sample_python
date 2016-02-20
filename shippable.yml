@@ -9,9 +9,6 @@ install:
   - pip install -r requirements.txt
 
 
-
-  
-  
 archive: true
 notifications:
      email:
